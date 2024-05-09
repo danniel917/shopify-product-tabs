@@ -1,3 +1,18 @@
-# Set up Tailwind CSS with Shopify with Dawn
+# Shopify Dawn + Tailwind CSS
 
-> This repository provides a simple guide on how to set up Tailwind CSS with Shopify themes. In this tutorial, we'll go through setting up Node.js, cloning a Shopify theme, setting up a Node project, installing necessary dependencies, and creating necessary configuration files.
+A simple starter using Dawn and Tailwind CSS
+
+## Setup
+
+- Clone this repo
+- Run `yarn` or `npm i`
+
+## Development
+
+- Run `dev` to start Shopify CLI
+- Tailwind classes must be prefixed with `tw-` to avoid conflicts with Dawn, for example: `tw-mx-auto`, `tw-w-full`, etc.
+- Changed in `tailwind.config.js` might require a server restart.
+
+## Deploy
+- Run `deploy` or use the Github integration on Shopify.
+
