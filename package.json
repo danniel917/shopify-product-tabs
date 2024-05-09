@@ -2,7 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "run-p -sr shopify:dev watch",
+    "deploy": "run-s build shopify:deploy",
     "shopify:dev": "shopify theme dev",
+    "shopify:deploy": "shopify theme push",
     "build": "vite build --minify",
     "watch": "vite build --watch"
   },
