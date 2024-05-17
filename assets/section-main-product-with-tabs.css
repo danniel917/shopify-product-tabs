@@ -1,0 +1,61 @@
+#sectionTitle,
+#tabContent,
+.product-tab-card {
+  animation: var(--animation-slide-in);
+  animation-delay: calc(var(--animation-order) * 75ms);
+}
+
+#sectionTabs button.active {
+  background-color: #FFF;
+  border-bottom: none;
+}
+
+#sectionTabs button.active span {
+  transform: rotate(180deg);
+}
+
+#tabContent.active {
+  display: block;
+}
+
+.key_feaures ul {
+  list-style: inherit;
+  padding-left: 20px;
+}
+
+.product-tab-card {
+  width: 200px;
+  height: 180px;
+  border: 2px solid;
+  padding: 20px;
+  position: relative;
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 1em;
+}
+
+.card-details {
+  font-size: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-transform: uppercase;
+}
+
+.completed .card-details {
+  color: #63E7C0;
+}
+
+.not_completed .card-details {
+  color: #E45F4E;
+}
+
+.product-tab-card.completed {
+  border-color: #63E7C0;
+}
+
+.product-tab-card.not_completed {
+  border-color: #E45F4E;
+}
