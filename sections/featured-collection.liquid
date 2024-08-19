@@ -1,5 +1,3 @@
-{% paginate collection.products by 10 %}
-  {% for product in collection.products %}
+{% for product in collection.products %}
     <h3>{{ product.title }}</h3>
   {% endfor %}
-{% endpaginate %}
